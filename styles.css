@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('nathan-dumlao-5Hl5reICevY-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    border: 10px solid white;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+    padding: 4rem;
+    box-shadow: 0 0 3rem #fff;
+}
+
+.clock-face{
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+    position: relative;
+}
+
+.hand{
+    width: 50%;
+    height: 4px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.7s ease-in;
+    transition-timing-function: cubic-bezier(0, 2.67, 0, 0.41);
+    box-shadow: 0 0 3rem #fff;
+}
+
+.hour-hand{
+    width: 35%;
+    position: relative;
+    top: 50%;
+    left: 15%
+}
+.minute-hand{
+    width: 50%;
+    position: relative;
+    top: 50%;
+}
